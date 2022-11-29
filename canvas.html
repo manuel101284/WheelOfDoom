@@ -18,18 +18,18 @@
     </head>
 
     <body onload="iniciarJuego()">
-        <canvas id="wheelOfDoom" width="150" height="150">
-            <button class="btn btn-canvas" id="btn-empujar">Empujar</button>
-            <button class="btn btn-canvas" id="btn-siguiente">Nueva Victima</button>
-        </canvas>
-        <!-- <div>
-            <input type="text" id="alma"></input>
-            <input type="button" id="btn-agregar-alma" value="agregar" onclick="agregarAlma()"></input>
-            <input type="button" id="btn-mostrar-alma" value="mostrar" onclick="mostrarAlma()"></input>
-        </div>
-        <hr>
-        <div id="resultado"></div> -->
+        <header>
+            <button type="button" class="btn" id="home"><a href="/index.html">Regresar</a></button>
+        </header>
 
+        <canvas id="wheelOfDoom" width="150" height="150"></canvas>
+        <div>
+            <!-- <input type="button" class="btn btn-canvas" id="btn-empujar" value="Empujar" onclick="empujarAlma()"></input> -->
+            <!-- <input type="button" class="btn btn-canvas" id="btn-siguiente" value="Siguiente Alma" onclick="elegirAlma()"></input> -->
+
+            <button type="button" class="btn btn-canvas" id="btn-empujar" value="Empujar" onclick="empujarAlma()">Empujar</button>
+            <button type="button" class="btn btn-canvas" id="btn-siguiente" value="Siguiente Alma" onclick="elegirAlma()">Siguiente</button>
+        </div>
     </body>
     
 </html>
