@@ -47,3 +47,4 @@ function iniciarJuego(){
         principal();
     },fps);
 }
+
