@@ -1,4 +1,37 @@
 body {
     background: white;
-    display: flex;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+#wheelOfDoom{
+    display: block;
+    background-color:  #40CFFF;
+    border: 2px black solid;
+    border-radius: 25px;
+}
+
+#btn-iniciar{
+    width: 50px;
+    height: 50px;
+    background-color: #1a472a;
+    border: 1px white solid;
+    color: white;
+}
+
+
+#btn-empujar{
+    width: 50px;
+    height: 50px;
+    background-color: #1a472a;
+    border: 1px white solid;
+    color: white;
+}
+#btn-siguiente{
+    width: 50px;
+    height: 50px;
+    background-color: #1a472a;
+    border: 1px white solid;
+    color: white;
 }

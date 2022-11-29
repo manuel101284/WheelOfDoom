@@ -1,3 +1,7 @@
+var canvas;
+var contexto;
+const fps=60;
+
 var sacrificio = [];
 
 document.onload = function(){
@@ -33,4 +37,13 @@ function mostrarAlma(){
 
         resultado.appendChild(datoParrafo);
     }
+}
+
+function iniciarJuego(){
+    canvas = document.getElementById('wheelOfDoom');
+    contexto = canvas.getContext('2d');
+
+    setInterval(function(){
+        principal();
+    },fps);
 }
