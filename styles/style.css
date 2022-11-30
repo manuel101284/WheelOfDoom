@@ -1,20 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Texturina:opsz,wght@12..72,100;12..72,200;12..72,300;12..72,400;12..72,500;12..72,600;12..72,700;12..72,800;12..72,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Texturina:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Variables Globales de estilo: */
 :root {
 /* Colores */
-    --cafe: #41282c
-    --azul: #85c8f2
-    --naranja: #a63429
-    --beige: #f0c095
+    --cafe: #41282c;
+    --azul: #85c8f2;
+    --naranja: #a63429;
+    --beige: #f0c095;
+    --negro: #000000;
+    --balnco: #ffffff;
+
 /* Fuentes */
-    --títulos: 'Texturina', serif;
-    --textos: 'Roboto', sans-serif;
-/* Tamaño/Peso de fuentes (No son definitivas, solo las puse temporalmente)*/
-    --peso-titulo: 700;
+        
+    --fuente-titulos: 'Texturina', serif; /* "--fuente-titulos" Es la misma fuente para los títulos en general, los títulos de las alertas y los botones. */
+    --fuente-textos: 'Roboto', sans-serif;
+
+/* Tamaño/Peso de fuentes */
+    --peso-titulos: 700;
     --peso-textos: 400;
-    --tamaño-titulos: 2rem;
-    --tamaño-textos: 1rem;
+    --peso-titulos-alertas: 500;
+    --peso-textos-alertas: 400;
+    --peso-botones: 700;
+    --tamaño-titulos: 2.5rem;
+    --tamaño-textos: 1.5rem;
+    --tamaño-titulos-alertas: 2rem;
+    --tamaño-textos-alertas: 1rem;
+    --tamaño-botones: 1.5rem;
 }
+/* EJEMPLO de como usar las Variables Globales: */
+    /* .titulo {
+        font-family: var(--fuente-titulos);
+        font-size: var(--tamaño-titulos);
+        font-weight: var(--peso-titulos);
+        color: var(--naranja);
+    } */
 
 body {
     background: white;
