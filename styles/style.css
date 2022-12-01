@@ -8,7 +8,7 @@
     --naranja: #a63429;
     --beige: #f0c095;
     --negro: #000000;
-    --balnco: #ffffff;
+    --blanco: #ffffff;
 
 /* Fuentes */
         
@@ -71,4 +71,19 @@ body {
     background-color: #1a472a;
     border: 1px white solid;
     color: white;
+}
+
+.swal2-container.swal2-center>.swal2-popup {
+    font-family: var(--fuente-titulos);
+    font-weight: var(--peso-titulos-alertas);
+    border-color: var(--negro);
+    background: var(--beige);
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
+.swal2-styled.swal2-confirm{
+    font-family: var(--fuente-titulos);
+    background-color: var(--azul);
 }
