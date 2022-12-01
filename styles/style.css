@@ -85,5 +85,6 @@ body {
 }
 .swal2-styled.swal2-confirm{
     font-family: var(--fuente-titulos);
-    background-color: var(--azul);
+    background-color: var(--cafe);
+    font-weight: var(--tamaño-botones);
 }

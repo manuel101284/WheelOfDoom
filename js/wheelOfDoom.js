@@ -31,7 +31,8 @@ function agregarAlma(){
         document.getElementById('xyz').play();                                                   // Si el contador no está en 0, el coder no puede ser ingresado en la lista y muestra una alerta
         Swal.fire({
             icon:'error',
-            title:'Esta alma ya existe'
+            title:'Opss',
+            text: 'Esta alma ya existe'
             });
     }
 }
