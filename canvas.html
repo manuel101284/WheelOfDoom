@@ -4,35 +4,34 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sacrificios</title>
+        <title>Ahogados en Código / Juego</title>
 
-        <style>
-            /* ESTILO EN EL .CSS */
-        </style>
 
         <link rel="stylesheet" href="/assets/styles/style.css">
 
-        <script src="/assets/js/wheelOfDoom.js"></script>
+        <script src="/assets/js/game.js"></script>
         
     </head>
 
-    <body onload="iniciarJuego()">
-        <div class="container-gif">
-            <img src="/assets/img/CaidaMobile.gif" class="gif-caida">
-        </div>
-        <canvas id="wheelOfDoom" width="1000px" height="600px">
-            <button class="btn btn-canvas" id="btn-empujar">Empujar</button>
-            <button class="btn btn-canvas" id="btn-siguiente">Nueva Victima</button>
-        </canvas>
-
-        <!-- <div>
-            <input type="text" id="alma"></input>
-            <input type="button" id="btn-agregar-alma" value="agregar" onclick="agregarAlma()"></input>
-            <input type="button" id="btn-mostrar-alma" value="mostrar" onclick="mostrarAlma()"></input>
-        </div>
-        <hr>
-        <div id="resultado"></div> -->
-
+    <body onload="empezarJuego()">
+        <header>
+            <button type="button" class="btn" id="home"><a href="/index.html">Regresar</a></button>
+        </header>
+        <section class="container">
+            <div class="botones-2">
+                <button type="button" class="btn btn-canvas" id="btn-empujar-alma" onclick="empujarAlma()">Empujar</button>
+                <button type="button" class="btn btn-canvas" id="btn-siguiente-alma" onclick="siguienteAlma()">Siguiente</button>
+                <button type="button" class="btn btn-mostrar" id="btn-mostrar-alma" onclick="mostrarAlma()">Mostrar</button>
+            </div>
+            <div class="container-gif">
+                <img src="/assets/img/CaidaMobile.gif" class="gif-caida">
+            </div>
+            <canvas id="ahogadosEnCodigo" width="1000px" height="600px">
+            </canvas>
+            <hr>
+            <div id="resultado1"></div>
+        </section>
+        
+        
     </body>
-    
 </html>
