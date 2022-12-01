@@ -4,38 +4,34 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="sweetalert2.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.css"/>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.js"></script>
-        <title>Sacrificios</title>
+        <title>ahogadosencodigo</title>
 
         <style>
             /* ESTILO EN EL .CSS */
         </style>
 
         <link rel="stylesheet" href="/styles/style.css">
-        <script src="/js/wheelOfDoom.js"></script>
+
+        <script src="/js/game.js"></script>
         
     </head>
 
-    <body onload="iniciarJuego()">
+    <body onload="empezarJuego()">
         <header>
             <button type="button" class="btn" id="home"><a href="/index.html">Regresar</a></button>
         </header>
-
-        <canvas id="wheelOfDoom" width="150" height="150"></canvas>
-        <div>
-            <!-- <input type="button" class="btn btn-canvas" id="btn-empujar" value="Empujar" onclick="empujarAlma()"></input> -->
-            <!-- <input type="button" class="btn btn-canvas" id="btn-siguiente" value="Siguiente Alma" onclick="elegirAlma()"></input> -->
-
-            <button type="button" class="btn btn-canvas" id="btn-empujar" value="Empujar" onclick="empujarAlma()">Empujar</button>
-            <button type="button" class="btn btn-canvas" id="btn-siguiente" value="Siguiente Alma" onclick="elegirAlma()">Siguiente</button>
-        </div>
-
+        <section class="container">
+            
+            <div class="botones-2">
+                <button type="button" class="btn btn-canvas" id="btn-empujar-alma" onclick="empujarAlma()">Empujar</button>
+                <button type="button" class="btn btn-canvas" id="btn-siguiente-alma" onclick="siguienteAlma()">Siguiente</button>
+                <button type="button" class="btn btn-mostrar" id="btn-mostrar-alma" onclick="mostrarAlma()">Mostrar</button>
+            </div>
+            
+            <hr>
+            <div id="resultado1"></div>
+        </section>
         
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+        
     </body>
-    
 </html>
