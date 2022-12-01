@@ -65,7 +65,7 @@ function empujarAlma(indiceAlmaElegida){
 
 //     // imagenPrueba = new Image();
 
-//     // imagenPrueba.src = "./img/img-mario.png";
+//     // imagenPrueba.src = "/assets/img/img-mario.png";
 
 //     setInterval(function(){
 //         principal();
