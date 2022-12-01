@@ -15,7 +15,7 @@ document.onload = function(){
 
 // Con esta función vamoa a añadir coders a la lista
 function agregarAlma(){
-    var nuevaalma = document.getElementById('alma').value;  // Captura el nombre del coder desde una caja de texto
+    var nuevaalma = document.getElementById('alma').value;   // Captura el nombre del coder desde una caja de texto
     var longitud = sacrificio.length;                       // Hallamos la longitud del arreglo
     var contador=0;                                         // Variable auxiliar para contar si se repite un nombre
 
@@ -27,12 +27,16 @@ function agregarAlma(){
     if(contador==0){                                         // Si el contador está en 0, el coder se agrega a la lista
         sacrificio.push(nuevaalma);
     }
-    else{                                                   // Si el contador no está en 0, el coder no puede ser ingresado en la lista y muestra una alerta
-        alert("Esta alma ya existe");
+    else{
+        document.getElementById('xyz').play();                                                   // Si el contador no está en 0, el coder no puede ser ingresado en la lista y muestra una alerta
+        Swal.fire({
+            icon:'error',
+            title:'Esta alma ya existe'
+            });
     }
-
-    
 }
+
+
 
 // Con esta función vemos la lista de coders que existen en el arreglo
 function mostrarAlma(){
@@ -48,23 +52,44 @@ function mostrarAlma(){
 }
 
 
+
 // COn esta función borramos a un coder de la lista, lo salvamos del sacrificio
 function borrarAlma(){ 
     var salvaralma = prompt("Ingrese el alma que desear salvar", "alma anónima");   // Captura el nombre de un prompt
     var longitud = sacrificio.length;                                               // Hallamos la longitud del arreglo
 
-    for(let i=0; i<longitud; i++){                                                  // Con ete ciclo recorremos la lista buscando el coder a salvar
-        if(sacrificio[i] == salvaralma){                                            // Cuando una posición de la lista sea igual al coder ingresado, lo salvamos
-            alert("Va a salvar esta alma");
+    for(let i=0; i<longitud; i++){                                                   // Con este ciclo recorremos la lista buscando el coder a salvar
+        if(sacrificio[i] == salvaralma){ 
+            document.getElementById('trumpet').play();                               // Cuando una posición de la lista sea igual al coder ingresado, lo salvamos
+            Swal.fire('Va a salvar esta alma');
 
             sacrificio.splice(i,1);                                                 // Borramos al coder indicado de la lista de sacrificios
         }
-        else{                                                                       // Si el coder no está, mostramos una alerta informando
-            alert("Dicha alma no está condenada");
+        else{
+            document.getElementById('trumpet').play();                                                                       // Si el coder no está, mostramos una alerta informando
+            Swal.fire('Dicha alma no está condenada');
             break;
         }
     }
 }
+
+function prompt() {
+    Swal
+    .fire({
+        title: "Ingrese el alma que desear salvar",
+        input: "Alma anonima",
+        showCancelButton: true,
+        confirmButtonText: "Guardar",
+        cancelButtonText: "Cancelar",
+    })
+    .then(resultado => {
+        if (resultado.value) {
+            let nombre = resultado.value;
+            console.log("Hola, " + nombre);
+        }
+    });
+}
+
 
 
 // Con esta función elegimos aleatoriamente un lugar de la lista de coders
@@ -79,7 +104,7 @@ function elegirAlma(){
         if(valor2 == j){                                                            // Cuando la posición se encuentre, pasamoa eliminar    
             var almacondenada = sacrificio[j];                                      // Guardamos el nombre del coder de la posición encontrada    
 
-            alert(almacondenada);                                                   // Se puede cambiar este mensaje por otro y agregar la animación del agua
+            swal.fire('almacondenada');                                                   // Se puede cambiar este mensaje por otro y agregar la animación del agua
         }
     }
 }
@@ -100,4 +125,5 @@ function iniciarJuego(){                                                        
         principal();
     },fps);
 }
+
 
