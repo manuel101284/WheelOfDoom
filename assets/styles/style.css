@@ -36,19 +36,39 @@
     } */
 
 body {
-    background: white;
+    background: var(--cafe);
+    justify-content: center;
+    overflow: hidden;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
 }
 
-#wheelOfDoom{
+#ahogadosEnCodigo {
     display: block;
-    width: 200px;
-    height: 200px;
-    background-color:  #40CFFF;
-    border: 2px black solid;
-    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/BackDesk.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-gif {
+    overflow: hidden;
+}
+
+.gif-caida {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 47%;
+    left: 47%;
 }
 
 .btn{
@@ -57,11 +77,6 @@ body {
     background-color: bisque;
     border: 1px black solid;
     border-radius: 5px;
-}
-
-    background-color: #1a472a;
-    border: 1px white solid;
-    color: white;
 }
 
 #btn-empujar{
@@ -89,7 +104,17 @@ body {
     align-self: center;
     justify-self: center;
 }
+
 .swal2-styled.swal2-confirm{
     font-family: var(--fuente-titulos);
     background-color: var(--azul);
+}
+
+/* Media query (Tablet) */
+@media (max-width: 800px) {
+    
+}
+/* Media query (Desktop) */
+@media (max-width: 1024px) {
+    
 }
