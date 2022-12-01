@@ -79,3 +79,17 @@ function guardarEnStorage(sacrificio){
 
     localStorage.setItem("listaUsuarios", JSON.stringify(listaSacrificio));
 }
+
+        else{                                                                        // Si el coder no está, mostramos una alerta informando
+            alert("Dicha alma no está condenada");
+            i=20000;
+        }
+    }
+}
+
+
+function guardarEnStorage(sacrificio){
+    var listaSacrificio = sacrificio;
+
+    localStorage.setItem("listaUsuarios", JSON.stringify(listaSacrificio));
+}
