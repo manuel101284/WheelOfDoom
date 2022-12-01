@@ -10,7 +10,7 @@ Descripción...
 ## Design 🖍️
 Te presentamos algunos detalles de nuestro diseño:
 
-![App Screenshot](https://github.com/)
+![App Screenshot](https://github.com/manuel101284/WheelOfDoom/blob/main/assets/img/CartaGr%C3%A1fica.png)
 
 A continuación, podrás darle un vistazo al juego:
 
