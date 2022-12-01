@@ -10,17 +10,21 @@
             /* ESTILO EN EL .CSS */
         </style>
 
-        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/assets/styles/style.css">
 
-        <script src="/js/wheelOfDoom.js"></script>
+        <script src="/assets/js/wheelOfDoom.js"></script>
         
     </head>
 
     <body onload="iniciarJuego()">
-        <canvas id="wheelOfDoom" width="150" height="150">
+        <div class="container-gif">
+            <img src="/assets/img/CaidaMobile.gif" class="gif-caida">
+        </div>
+        <canvas id="wheelOfDoom" width="1000px" height="600px">
             <button class="btn btn-canvas" id="btn-empujar">Empujar</button>
             <button class="btn btn-canvas" id="btn-siguiente">Nueva Victima</button>
         </canvas>
+
         <!-- <div>
             <input type="text" id="alma"></input>
             <input type="button" id="btn-agregar-alma" value="agregar" onclick="agregarAlma()"></input>
