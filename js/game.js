@@ -27,13 +27,13 @@ function siguienteAlma(){
 
             alert(almaCondenada);                                       // Se puede cambiar este mensaje por otro y agregar la animación del agua
 
-            empujarAlma(indiceAlmaElegida);
+            //empujarAlma(indiceAlmaElegida);
 
             //listaDeSalida.push(almaCondenada);
         }
     }
 
-    //empujarAlma(indiceAlmaElegida);
+    empujarAlma(indiceAlmaElegida);
     //empujarAlma(almaCondenada);
 };
 
@@ -43,7 +43,6 @@ function empujarAlma(indiceAlmaElegida){
     
     // imagenMario.movimiento();
 
-    //var xx = indiceAlmaElegida;
     //var almaCondenada = almaCondenada;
 
     // for(let k=0; k<listaDeSacrificio.length; k++){
@@ -53,7 +52,7 @@ function empujarAlma(indiceAlmaElegida){
     //     }
     //     finDelJuego();
     // }
-
+    //var xx = indiceAlmaElegida;
     listaDeSacrificio.splice(indiceAlmaElegida,1);
     finDelJuego();
 };

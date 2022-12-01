@@ -3,7 +3,7 @@ var contexto;
 const fps=60;
 
 
- // En este arreglo o vector agregamos los nombres de los coders a sacrificar
+// En este arreglo o vector agregamos los nombres de los coders a sacrificar
 // var sacrificio = [];
 var sacrificio = [];
 
@@ -19,7 +19,7 @@ document.onload = function(){
 };
 
 
-// Con esta función vamoa a añadir coders a la lista
+// Con esta función vamos a añadir coders a la lista
 function agregarAlma(){
     var nuevaalma = document.getElementById('alma').value;  // Captura el nombre del coder desde una caja de texto
     var longitud = sacrificio.length;                       // Hallamos la longitud del arreglo
