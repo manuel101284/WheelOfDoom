@@ -29,7 +29,11 @@ function siguienteAlma(){
             
             console.log(almaCondenada);
 
+
+            Swal.fire(almaCondenada);                                       // Se puede cambiar este mensaje por otro y agregar la animación del agua
+
             //alert(almaCondenada);                                     // Se puede cambiar este mensaje por otro y agregar la animación del agua
+
 
             sonidoCoderElegido.play();                                  // Al elegir un jugador, se activa un sonido anunciado un ganador
 
@@ -89,7 +93,8 @@ function empujarAlma(indiceAlmaElegida, almaCondenada){
 
 function finDelJuego(){
     if(listaDeSacrificio.length == 0){
-        alert("Ya no hay más almas para sacrificar");
+        document.getElementById('ohno').play();
+        Swal.fire("Ya no hay más almas para sacrificar");
         
         window.location.href("/index.html");
     }
