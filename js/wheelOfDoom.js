@@ -33,7 +33,7 @@ function agregarAlma(){
             icon:'error',
             title:'Opss',
             text: 'Esta alma ya existe'
-            });
+        });
     }
 }
 

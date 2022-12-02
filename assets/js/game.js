@@ -25,7 +25,7 @@ function siguienteAlma(){
             
             console.log(almaCondenada);
 
-            alert(almaCondenada);                                       // Se puede cambiar este mensaje por otro y agregar la animación del agua
+            Swal.fire(almaCondenada);                                       // Se puede cambiar este mensaje por otro y agregar la animación del agua
 
             empujarAlma(indiceAlmaElegida);
 
@@ -74,7 +74,8 @@ function empujarAlma(indiceAlmaElegida){
 
 function finDelJuego(){
     if(listaDeSacrificio.length == 0){
-        alert("Ya no hay más almas para sacrificar");
+        document.getElementById('ohno').play();
+        Swal.fire("Ya no hay más almas para sacrificar");
         
         window.location.href("/index.html");
     }

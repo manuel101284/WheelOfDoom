@@ -25,7 +25,7 @@ function agregarAlma(){
     var longitud = sacrificio.length;                       // Hallamos la longitud del arreglo
     var contador=0;                                         // Variable auxiliar para contar si se repite un nombre
 
-    for(let i=0; i<longitud; i++){                          // Este ciclo va de 0 a la longitud para revisar si el coder a ingresar está o no está
+    for(let i=0; i<longitud; i++){                           // Este ciclo va de 0 a la longitud para revisar si el coder a ingresar está o no está
         if(sacrificio[i] === nuevaalma){                    // Este condicional evalua si se repite con todos los coders de la lista
             contador = contador + 1;                        // Si se repite, suma 1 a la variable auxiliar
         }
@@ -36,7 +36,12 @@ function agregarAlma(){
         guardarEnStorage(sacrificio);
     }
     else{                                                   // Si el contador no está en 0, el coder no puede ser ingresado en la lista y muestra una alerta
-        alert("Esta alma ya existe");
+        document.getElementById('xyz').play();              // Si el contador no está en 0, el coder no puede ser ingresado en la lista y muestra una alerta
+        Swal.fire({
+            icon:'error',
+            title:'Opss',
+            text: 'Esta alma ya existe'
+        });
     }
 
     
@@ -61,17 +66,35 @@ function borrarAlma(){
     var ignoraralma = prompt("Ingrese el alma que desear salvar", "alma anónima");   // Captura el nombre de un prompt
     var longitud = sacrificio.length;                                                // Hallamos la longitud del arreglo
 
-    for(let i=0; i<longitud; i++){                                                   // Con ete ciclo recorremos la lista buscando el coder a salvar
+    for(let i=0; i<longitud; i++){                                                    // Con ete ciclo recorremos la lista buscando el coder a salvar
         if(sacrificio[i] == ignoraralma){                                            // Cuando una posición de la lista sea igual al coder ingresado, lo salvamos
-            alert("Va a salvar esta alma "+ignoraralma);
+            Swal.fire("Va a salvar esta alma "+ignoraralma);
 
             sacrificio.splice(i,1);                                                  // Borramos al coder indicado de la lista de sacrificios
         }
-        else{                                                                        // Si el coder no está, mostramos una alerta informando
-            alert("Dicha alma no está condenada");
+        else{
+            document.getElementById('decide').play();                                                                        // Si el coder no está, mostramos una alerta informando
+            Swal.fire("Dicha alma no está condenada");
             i=20000;
         }
     }
+}
+
+function prompt() {
+    Swal
+        .fire({
+            title: "Ingrese el alma que desear salvar",
+            input: "text",
+            showCancelButton: true,
+            confirmButtonText: "Guardar",
+            cancelButtonText: "Cancelar",
+        })
+        .then(resultado => {
+            if (resultado.value) {
+                let nombre = resultado.value;
+                console.log("Hola, " + nombre);
+            }
+        });
 }
 
 function guardarEnStorage(sacrificio){
