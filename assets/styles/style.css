@@ -111,7 +111,7 @@ body {
 }
 
 
-/* stylos by diza */
+/* stylos by Diza */
 body{
     font-family: var(--fuente-titulos);
     background-color: var(--blanco);
@@ -193,8 +193,8 @@ a{
 }
 
 /* Media query (Tablet) */
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
 }
 /* Media query (Desktop) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 }
