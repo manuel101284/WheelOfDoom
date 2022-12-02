@@ -13,11 +13,15 @@ document.onload = function(){
     //document.sacrificio = [];
 };
 
+let sonidoCoderElegido = new Audio('../assets/music/decide.mp3');
+
 // Con esta función elegimos aleatoriamente un lugar de la lista de coders
 function siguienteAlma(){
-    cantidadAlmas = listaDeSacrificio.length + 1;                              // A la longitud del vector le sumamos 1, para poder aplicar bien la función ramdon
+    cantidadAlmas = listaDeSacrificio.length + 1;                       // A la longitud del vector le sumamos 1, para poder aplicar bien la función ramdon
 
-    indiceAlmaElegida = Math.floor(Math.random()*cantidadAlmas);               // Hallamos un valor aleatorio entre 0 y la variable valor1, y la volvemos un entero
+    indiceAlmaElegida = Math.floor(Math.random()*cantidadAlmas);        // Hallamos un valor aleatorio entre 0 y la variable valor1, y la volvemos un entero
+
+    console.log(indiceAlmaElegida);
 
     for(let j=0; j<listaDeSacrificio.length; j++){                      // En este ciclo vamos a buscar la posición indiceAlmaElegida dentro del arreglo
         if(indiceAlmaElegida == j){                                     // Cuando la posición se encuentre, pasamoa eliminar    
@@ -25,9 +29,15 @@ function siguienteAlma(){
             
             console.log(almaCondenada);
 
+
             Swal.fire(almaCondenada);                                       // Se puede cambiar este mensaje por otro y agregar la animación del agua
 
-            empujarAlma(indiceAlmaElegida);
+            //alert(almaCondenada);                                     // Se puede cambiar este mensaje por otro y agregar la animación del agua
+
+
+            sonidoCoderElegido.play();                                  // Al elegir un jugador, se activa un sonido anunciado un ganador
+
+            //empujarAlma(indiceAlmaElegida);
 
             //listaDeSalida.push(almaCondenada);
         }
@@ -37,8 +47,17 @@ function siguienteAlma(){
     //empujarAlma(almaCondenada);
 };
 
+let sonidoCaida = new Audio("../assets/music/scream-water.mp3");
 // Con esta función vamos a eliminar al coder encontrado en la función anterior 
-function empujarAlma(indiceAlmaElegida){
+function empujarAlma(indiceAlmaElegida, almaCondenada){
+
+    var caidaPersonaje = document.getElementsByClassName('gif-caida');
+    
+
+    sonidoCaida.play();                                                 // Al caer el jugador al agua, se activa un sonido
+
+    alert(almaCondenada);
+
     //var accion = document.getElementById('btn-empujar');
     
     // imagenMario.movimiento();
@@ -48,7 +67,7 @@ function empujarAlma(indiceAlmaElegida){
 
     // for(let k=0; k<listaDeSacrificio.length; k++){
     //     if(k == xx){
-    //         listaDeSacrificio.splice[xx,1];                                 // Eliminamos el lugar indiceAlmaElegida del arreglo, que corresponde al coder sacrificado
+    //         listaDeSacrificio.splice[xx,1];                          // Eliminamos el lugar indiceAlmaElegida del arreglo, que corresponde al coder sacrificado
             
     //     }
     //     finDelJuego();
@@ -59,7 +78,7 @@ function empujarAlma(indiceAlmaElegida){
 };
 
 // Función principal
-// function iniciarJuego(){                                                // Dibujamos el canvas
+// function iniciarJuego(){                                            // Dibujamos el canvas
 //     canvas = document.getElementById('wheelOfDoom');
 //     contexto = canvas.getContext('2d');
 
