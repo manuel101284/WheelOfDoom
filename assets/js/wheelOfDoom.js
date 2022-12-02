@@ -39,7 +39,7 @@ function agregarAlma(){
         alert("Esta alma ya existe");
     }
 
-    
+    document.getElementById('alma').value="";               // Limpiamos la caja de texto para agregar un nuevo nombre
 };
 
 // Con esta función vemos la lista de coders que existen en el arreglo
