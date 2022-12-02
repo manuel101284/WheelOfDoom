@@ -15,13 +15,19 @@
 
     <body onload="empezarJuego()">
         <header>
-            <button type="button" class="btn" id="home"><a href="/index.html">Regresar</a></button>
+            <div class="container-btn-regresar">
+                <button type="button" class="btn" id="home"><a href="/index.html">Regresar</a></button>
+            </div>
         </header>
         <section class="container">
             <div class="botones-2">
-                <button type="button" class="btn btn-canvas" id="btn-empujar-alma" onclick="empujarAlma()">Empujar</button>
-                <button type="button" class="btn btn-canvas" id="btn-siguiente-alma" onclick="siguienteAlma()">Siguiente</button>
-                <button type="button" class="btn btn-mostrar" id="btn-mostrar-alma" onclick="mostrarAlma()">Mostrar</button>
+                <div class="container-btn-empujar">
+                    <button type="button" class="btn btn-canvas" id="btn-empujar-alma" onclick="empujarAlma()">Empujar</button>
+                </div>
+                <div class="container-btn-siguiente">
+                    <button type="button" class="btn btn-canvas" id="btn-siguiente-alma" onclick="siguienteAlma()">Siguiente</button>
+                </div>
+                <!-- <button type="button" class="btn btn-mostrar" id="btn-mostrar-alma" onclick="mostrarAlma()">Mostrar</button> -->
             </div>
             <div class="container-gif">
                 <img src="/assets/img/CaidaMobile.gif" class="gif-caida">
