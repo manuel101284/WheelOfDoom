@@ -2,9 +2,9 @@
 Descripción...
 
 ## Development tools 🧰
-|  Maquetación  |     Estilo    | Funcionalidad |
-|---------------|---------------|---------------|
-|`HTML`|`CSS`|`JavaScript`|
+|  Maquetación  |     Estilo    | Funcionalidad | Biblioteca | Animaciones |
+|---------------|---------------|---------------|---------------|---------------|
+|`HTML`|`CSS`|`JavaScript`|`SweetAlert2`|`Procreate + Illustrator`|
 
 
 ## Design 🖍️

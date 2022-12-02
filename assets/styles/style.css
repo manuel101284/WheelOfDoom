@@ -213,7 +213,90 @@ body {
     }
 }
 
+
+/* stylos by Diza */
+body{
+    font-family: var(--fuente-titulos);
+    background-color: var(--blanco);
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--azul)
+}
+
+a{
+    text-decoration: none;
+    color: var(--blanco);
+    align-items: center;
+}
+
+.name{
+    color: var(--naranja);
+    text-shadow: 2px 1px 1px var(--negro);
+    font-size: 20px;
+}
+
+.name-1{
+    color: var(--beige);
+}
+.btn{
+    height: 35px;
+    width: 25%;
+    background-color: var(--cafe);
+    text-decoration: none;
+    color: var(--blanco);
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+#alma{
+    width: 97%;
+    border-radius: 30px;
+    height: 30px;
+}
+
+.contenedor{
+    height: 100%;
+    width:75%;
+    margin: 8%;
+    padding: 5%;
+    background-color: var(--beige);
+    border-radius: 30px;
+}
+
+.botones-3{
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 30px;
+}
+
+.contenedor-2{
+    background-color: var(--azul);
+    border-radius: 30px;
+    height: 100%;
+    width: 75%;
+    padding: 5%;
+    margin: 8%;
+}
+
+
+#resultado{
+    margin-right: 75%;
+    margin-top: 0;
+    color: var(--negro);
+    font-size: 20px;
+    font-family: var(--fuente-textos);
+}
+
+.container-1{
+    font-size: 15px;
+}
+
 /* Media query (Tablet) */
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .container-btn-empujar {
         top: 42vh;
@@ -227,3 +310,10 @@ body {
         left: 72vh;
     }
 }
+
+@media screen and (max-width: 800px) {
+}
+/* Media query (Desktop) */
+@media screen and (max-width: 1024px) {
+}
+
