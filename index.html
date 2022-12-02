@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.js"></script>
         <title>Ahogados en Código / Inicio</title>
 
 
@@ -14,6 +17,27 @@
     </head>
 
     <body onload="empezarJuego()">
+
+        <header>
+            <button type="button" class="btn" id="btn-iniciar" onclick="empezarJuego()"><a href="/canvas.html">Iniciar</a></button>
+            <audio id="xyz" src="/assets/music/efect-thriller.mp3"></audio>
+            <audio id="decide" src="/assets/music/decide.mp3"></audio>
+            <audio id="trumpet" src="/assets/music/trumpet.mp3"></audio>
+            
+        </header>
+
+        <div class="botones-1">
+            
+            <input type="text" id="alma"></input>
+            <button type="button" class="btn btn-agregar" id="btn-agregar-alma" onclick="agregarAlma()">agregar</button>
+            <button type="button" class="btn btn-mostrar" id="btn-mostrar-alma" onclick="mostrarAlma()">mostrar</button>
+            <button type="button" class="btn btn-borrar" id="btn-borrar-alma" onclick="borrarAlma()">borrar</button>
+        </div>
+        <hr>
+        <div id="resultado"></div>
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
         
         <!-- header by Diza-->
         <div class="contenedor-principal">
@@ -43,6 +67,7 @@
                 </div>
             </div>
         </div>  
+
     </body>
     
 </html>
