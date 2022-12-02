@@ -25,7 +25,7 @@
     --tamaño-textos: 1.5rem;
     --tamaño-titulos-alertas: 2rem;
     --tamaño-textos-alertas: 1rem;
-    --tamaño-botones: 1.5rem;
+    --tamaño-botones: 1.2rem;
 }
 /* EJEMPLO de como usar las Variables Globales: */
     /* .titulo {
@@ -108,6 +108,49 @@ body {
 .swal2-styled.swal2-confirm{
     font-family: var(--fuente-titulos);
     background-color: var(--azul);
+}
+
+.body-main {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/MainBackMobile.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-btn-main {
+    display: flex;
+    margin: 0 auto;
+    padding: 74vh 0 0 0;
+    justify-content: center;
+}
+
+.btn-main {
+    justify-content: center;
+    font-family: var(--fuente-titulos);
+    font-size: var(--tamaño-botones);
+    font-weight: var(--peso-botones);
+    padding: 1px 10px 8px 10px;
+    border-radius: 100px;
+    background-color: var(--naranja);
+    color: var(--beige);
+    border: 3px solid var(--cafe);
+}
+
+.btn-main > a {
+    text-decoration: none;
+    color: var(--beige);
+}
+
+@media (min-width: 400px) {
+    .body-main {
+        background-image: url(/assets/img/MainBack.gif);
+    }
 }
 
 /* Media query (Tablet) */
