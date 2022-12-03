@@ -36,7 +36,7 @@ Para ejecutar el proyecto desde tu consola local:
 ## Demo 🔗
 Ingresa al siguiente link para ver el proyecto e interactúa con el:
 
-https://.netlify.app/
+https://ahogadosencodigo.netlify.app/
 
 ## Developed by 👩‍💻
 - [@manuel101284](https://github.com/manuel101284)
