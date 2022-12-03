@@ -25,7 +25,7 @@
     --tamaño-textos: 1.5rem;
     --tamaño-titulos-alertas: 2rem;
     --tamaño-textos-alertas: 1rem;
-    --tamaño-botones: 1.2rem;
+    --tamaño-botones: 1.5rem;
 }
 /* EJEMPLO de como usar las Variables Globales: */
     /* .titulo {
@@ -36,7 +36,7 @@
     } */
 
 body {
-    background: var(--blanco);
+    background: var(--cafe);
     justify-content: center;
     overflow: hidden;
     /* display: flex;
@@ -99,7 +99,6 @@ body {
     font-weight: var(--peso-titulos-alertas);
     border-color: var(--negro);
     background: var(--beige);
-    box-shadow: 0px 0px 15px 2px #85c8f2, 0px 0px 35x 10px #ffffff70;
     grid-column: 2;
     grid-row: 2;
     align-self: center;
@@ -108,109 +107,7 @@ body {
 
 .swal2-styled.swal2-confirm{
     font-family: var(--fuente-titulos);
-    background: var(--azul);
-    font-weight: var(--tamaño-botones);
-    border: 1px black solid;
-}
-
-.body-main {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/assets/img/MainBackMobile.gif);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-}
-
-.container-btn-main {
-    display: flex;
-    margin: 0 auto;
-    padding: 74vh 0 0 0;
-    justify-content: center;
-}
-
-.btn-main {
-    justify-content: center;
-    font-family: var(--fuente-titulos);
-    font-size: var(--tamaño-botones);
-    font-weight: var(--peso-botones);
-    padding: 1px 10px 8px 10px;
-    border-radius: 100px;
-    background-color: var(--naranja);
-    color: var(--beige);
-    border: 3px solid var(--cafe);
-}
-
-.btn-main > a {
-    text-decoration: none;
-    color: var(--beige);
-}
-
-.container-btn-regresar {
-    top: 2vh;
-    left: 2vh;
-    display: flex;
-    position: absolute;
-    margin: 0 auto;
-    padding: 0 0 0 0;
-    justify-content: center;
-}
-.container-btn-siguiente {
-    top: 90vh;
-    left: 2vh;
-    display: flex;
-    position: absolute;
-    margin: 0 auto;
-    padding: 0 0 0 0;
-    justify-content: center;
-}
-
-.container-btn-empujar {
-    top: 42vh;
-    left: 8vh;
-    display: flex;
-    position: absolute;
-    margin: 0 auto;
-    padding: 0 0 0 0;
-    justify-content: center;
-}
-
-#home, #btn-siguiente-alma, #btn-empujar-alma {
-    width: 100%;
-    justify-content: center;
-    font-family: var(--fuente-titulos);
-    font-size: var(--tamaño-botones);
-    font-weight: var(--peso-botones);
-    padding: 1px 10px 8px 10px;
-    border-radius: 100px;
-    background-color: var(--beige);
-    border: 3px solid var(--naranja);
-    color: var(--naranja);
-}
-
-#home {
-    background-color: var(--naranja);
-    color: var(--beige);
-    border: 3px solid var(--cafe);
-}
-
-#home > a {
-    text-decoration: none;
-    color: var(--beige);
-}
-
-@media (min-width: 425px) {
-    .body-main {
-        background-image: url(/assets/img/MainBack.gif);
-    }
-    .container-btn-empujar {
-        top: 42vh;
-        left: 19vh;
-    }
+    background-color: var(--azul);
 }
 
 
@@ -295,17 +192,18 @@ a{
     font-size: 15px;
 }
 
-
  /* responsive by Diza */
+ 
  /* tablet */
-@media (min-width: 800px) and (min-width: 1023px) {
+@media screen and (min-width: 765px) {
     .name{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .btn{
+        width: 32%;
         height: 50px;
-        font-size: 30px;
+        font-size: 12px;
     }
 
     #alma{
@@ -313,36 +211,14 @@ a{
         height: 42px;
     }
 
-    .container-1{
-        font-size: 25px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-   .name{
-    font-size: 32px;
-   }
-
-   .btn{
-    height: 50px;
-    width: 32%;
-    font-size: 22px;
-   }
-
-   #alma{
-    width: 97%;
-    height: 30px;
-   }
-
-   .contenedor{
-    height: 100%;
-    width: 38%;
-    margin: 0;
+    .contenedor{
+        width: 39%;
+        margin: 0;
     }
 
     .contenedor-2{
         height: 100%;
-        width: 38%;
+        width: 39%;
         margin: 0;
     }
 
@@ -353,24 +229,48 @@ a{
         margin: 5%;   
     }
 
-    h1{
-        font-size: 25px;
+    .container-1{
+        font-size: 10px;
     }
 }
 
-/* Media query (Tablet) */
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .container-btn-empujar {
-        top: 42vh;
-        left: 50vh;
+ /* destock */
+ @media screen and (min-width: 1024px) {
+    .name{
+     font-size: 32px;
     }
-}
-/* Media query (Desktop) */
-@media (min-width: 1024px) and (max-width: 1440px) {
-    .container-btn-empujar {
-        top: 42vh;
-        left: 72vh;
+ 
+    .btn{
+     height: 50px;
+     width: 32%;
+     font-size: 22px;
     }
-}
-
+ 
+    #alma{
+     width: 97%;
+     height: 30px;
+    }
+ 
+    .contenedor{
+     height: 100%;
+     width: 38%;
+     margin: 0;
+     }
+ 
+     .contenedor-2{
+         height: 100%;
+         width: 38%;
+         margin: 0;
+     }
+ 
+     .contenedores-juntos{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin: 5%;   
+     }
+ 
+     h1{
+         font-size: 25px;
+     }
+ }
