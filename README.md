@@ -28,6 +28,7 @@ Para ejecutar el proyecto desde tu consola local:
 
 ```bash
   Clona o descarga repositorio:
+  https://github.com/manuel101284/WheelOfDoom.git
 ```
 ```bash
   Ejecuta el archivo:
