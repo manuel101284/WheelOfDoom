@@ -30,7 +30,7 @@ Para ejecutar el proyecto desde tu consola local:
 ## Demo 🔗
 Ingresa al siguiente link para ver el proyecto e interactúa con el:
 
-https://thewheelofdoom.netlify.app/index.html
+https://ahogadosencodigo.netlify.app/
 
 
 ## Developed by 👩‍💻
