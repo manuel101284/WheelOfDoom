@@ -1,5 +1,5 @@
 # Ahogados en Código (juego) 🏴‍☠️
-Nuestra aplicación interactiva, se basa en que se agregan un grupo de nombres de usuarios y estos nombres de usuarios sale aleatoriamente y de esta forma el nombre del usuario o integrante elegido, será tirado por la borda o sacrificado.
+Nuestra aplicación interactiva, se basa en que se agregan un listado de nombres de usuarios y estos nombres de usuarios sale aleatoriamente y de esta forma el nombre del usuario o integrante elegido, será tirado por la borda o sacrificado.
 
 ## Development tools 🧰
 |  Maquetación  |     Estilo    | Funcionalidad | Biblioteca | Animaciones |
