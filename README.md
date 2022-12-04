@@ -14,7 +14,13 @@ Te presentamos algunos detalles de nuestro diseño:
 
 A continuación, podrás darle un vistazo al juego:
 
-![App Screenshot](https://github.com/)
+![App Screenshot](https://github.com/manuel101284/WheelOfDoom/blob/f/maria/assets/img/VistaPrevia.png)
+
+Nuestro diseño es completamente responsive:
+
+![App Screenshot](https://github.com/manuel101284/WheelOfDoom/blob/f/maria/assets/img/Responsive.PNG)
+
+
 
 
 ## Deployment 📂
@@ -22,6 +28,7 @@ Para ejecutar el proyecto desde tu consola local:
 
 ```bash
   Clona o descarga repositorio:
+  https://github.com/manuel101284/WheelOfDoom.git
 ```
 ```bash
   Ejecuta el archivo:
@@ -30,7 +37,7 @@ Para ejecutar el proyecto desde tu consola local:
 ## Demo 🔗
 Ingresa al siguiente link para ver el proyecto e interactúa con el:
 
-https://.netlify.app/
+https://ahogadosencodigo.netlify.app/
 
 ## Developed by 👩‍💻
 - [@manuel101284](https://github.com/manuel101284)
