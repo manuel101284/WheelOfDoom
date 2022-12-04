@@ -25,7 +25,7 @@
     --tamaño-textos: 1.5rem;
     --tamaño-titulos-alertas: 2rem;
     --tamaño-textos-alertas: 1rem;
-    --tamaño-botones: 1.2rem;
+    --tamaño-botones: 1.5rem;
 }
 /* EJEMPLO de como usar las Variables Globales: */
     /* .titulo {
@@ -36,12 +36,8 @@
     } */
 
 body {
-    background: var(--blanco);
+    background: var(--cafe);
     justify-content: center;
-    overflow: hidden;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 
 #ahogadosEnCodigo {
@@ -99,7 +95,6 @@ body {
     font-weight: var(--peso-titulos-alertas);
     border-color: var(--negro);
     background: var(--beige);
-    box-shadow: 0px 0px 15px 2px #85c8f2, 0px 0px 35x 10px #ffffff70;
     grid-column: 2;
     grid-row: 2;
     align-self: center;
@@ -108,6 +103,7 @@ body {
 
 .swal2-styled.swal2-confirm{
     font-family: var(--fuente-titulos);
+    background-color: var(--azul);
     background: var(--azul);
     font-weight: var(--tamaño-botones);
     border: 1px black solid;
@@ -159,6 +155,7 @@ body {
     padding: 0 0 0 0;
     justify-content: center;
 }
+
 .container-btn-siguiente {
     top: 90vh;
     left: 2vh;
@@ -211,8 +208,12 @@ body {
         top: 42vh;
         left: 19vh;
     }
+
 }
 
+audio {
+    display: none;
+}
 
 /* stylos by Diza */
 body{
@@ -295,25 +296,85 @@ a{
     font-size: 15px;
 }
 
-/* Media query (Tablet) */
+ /* responsive by Diza */
+ 
+ /* tablet */
+@media screen and (min-width: 765px) {
+    .name{
+        font-size: 30px;
+    }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .container-btn-empujar {
-        top: 42vh;
-        left: 50vh;
+    .btn{
+        width: 32%;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    #alma{
+        width: 99%;
+        height: 42px;
+    }
+
+    .contenedor{
+        width: 39%;
+        margin: 0;
+    }
+
+    .contenedor-2{
+        height: 100%;
+        width: 39%;
+        margin: 0;
+    }
+
+    .contenedores-juntos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5%;   
+    }
+
+    .container-1{
+        font-size: 10px;
     }
 }
-/* Media query (Desktop) */
-@media (min-width: 1024px) and (max-width: 1440px) {
-    .container-btn-empujar {
-        top: 42vh;
-        left: 72vh;
+
+ /* destock */
+ @media screen and (min-width: 1024px) {
+    .name{
+     font-size: 32px;
     }
-}
-
-@media screen and (max-width: 800px) {
-}
-/* Media query (Desktop) */
-@media screen and (max-width: 1024px) {
-}
-
+ 
+    .btn{
+     height: 50px;
+     width: 32%;
+     font-size: 22px;
+    }
+ 
+    #alma{
+     width: 97%;
+     height: 30px;
+    }
+ 
+    .contenedor{
+     height: 100%;
+     width: 38%;
+     margin: 0;
+     }
+ 
+     .contenedor-2{
+         height: 100%;
+         width: 38%;
+         margin: 0;
+     }
+ 
+     .contenedores-juntos{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin: 5%;   
+     }
+ 
+     h1{
+         font-size: 25px;
+     }
+ }
