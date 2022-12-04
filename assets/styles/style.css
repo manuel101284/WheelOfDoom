@@ -38,10 +38,6 @@
 body {
     background: var(--blanco);
     justify-content: center;
-    overflow: hidden;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 
 #ahogadosEnCodigo {
@@ -159,6 +155,7 @@ body {
     padding: 0 0 0 0;
     justify-content: center;
 }
+
 .container-btn-siguiente {
     top: 90vh;
     left: 2vh;
@@ -213,6 +210,9 @@ body {
     }
 }
 
+audio {
+    display: none;
+}
 
 /* stylos by Diza */
 body{
