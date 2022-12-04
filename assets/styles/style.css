@@ -180,7 +180,7 @@ body {
     width: 100%;
     justify-content: center;
     font-family: var(--fuente-titulos);
-    font-size: var(--tamaño-botones);
+    font-size: 19px;
     font-weight: var(--peso-botones);
     padding: 1px 10px 8px 10px;
     border-radius: 100px;
@@ -198,6 +198,7 @@ body {
 #home > a {
     text-decoration: none;
     color: var(--beige);
+    font-size: 19px;
 }
 
 @media (min-width: 425px) {
