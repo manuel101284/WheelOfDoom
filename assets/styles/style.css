@@ -212,12 +212,20 @@ body {
         top: 42vh;
         left: 50vh;
     }
+    .gif-caida {
+        top: 47%;
+        left: 50%;
+    }
 }
 /* Media query (Desktop) */
 @media (min-width: 1024px) and (max-width: 1440px) {
     .container-btn-empujar {
         top: 42vh;
         left: 72vh;
+    }
+    .gif-caida {
+        top: 49%;
+        left: 51%;
     }
 }
 
