@@ -38,6 +38,10 @@
 body {
     background: var(--cafe);
     justify-content: center;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
 }
 
 #ahogadosEnCodigo {
@@ -104,133 +108,14 @@ body {
 .swal2-styled.swal2-confirm{
     font-family: var(--fuente-titulos);
     background-color: var(--azul);
-    background: var(--azul);
-    font-weight: var(--tamaño-botones);
-    border: 1px black solid;
 }
 
-.body-main {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/assets/img/MainBackMobile.gif);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-}
-
-.container-btn-main {
-    display: flex;
-    margin: 0 auto;
-    padding: 74vh 0 0 0;
-    justify-content: center;
-}
-
-.btn-main {
-    justify-content: center;
-    font-family: var(--fuente-titulos);
-    font-size: var(--tamaño-botones);
-    font-weight: var(--peso-botones);
-    padding: 1px 10px 8px 10px;
-    border-radius: 100px;
-    background-color: var(--naranja);
-    color: var(--beige);
-    border: 3px solid var(--cafe);
-}
-
-.btn-main > a {
-    text-decoration: none;
-    color: var(--beige);
-}
-
-.container-btn-regresar {
-    top: 2vh;
-    left: 2vh;
-    display: flex;
-    position: absolute;
-    margin: 0 auto;
-    padding: 0 0 0 0;
-    justify-content: center;
-}
-
-.container-btn-siguiente {
-    top: 90vh;
-    left: 2vh;
-    display: flex;
-    position: absolute;
-    margin: 0 auto;
-    padding: 0 0 0 0;
-    justify-content: center;
-}
-
-.container-btn-empujar {
-    top: 42vh;
-    left: 8vh;
-    display: flex;
-    position: absolute;
-    margin: 0 auto;
-    padding: 0 0 0 0;
-    justify-content: center;
-}
-
-#home, #btn-siguiente-alma, #btn-empujar-alma {
-    width: 100%;
-    justify-content: center;
-    font-family: var(--fuente-titulos);
-    font-size: 19px;
-    font-weight: var(--peso-botones);
-    padding: 1px 10px 8px 10px;
-    border-radius: 100px;
-    background-color: var(--beige);
-    border: 3px solid var(--naranja);
-    color: var(--naranja);
-}
-
-#home {
-    background-color: var(--naranja);
-    color: var(--beige);
-    border: 3px solid var(--cafe);
-}
-
-#home > a {
-    text-decoration: none;
-    color: var(--beige);
-    font-size: 19px;
-}
-
-@media (min-width: 425px) {
-    .body-main {
-        background-image: url(/assets/img/MainBack.gif);
-    }
-    .container-btn-empujar {
-        top: 42vh;
-        left: 19vh;
-    }
-
-}
-
-audio {
-    display: none;
-}
 
 /* stylos by Diza */
-
-body {
+body{
     font-family: var(--fuente-titulos);
     background-color: var(--blanco);
 }
-
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--azul)
-}
-
-a {
 
 header{
   display: flex;
@@ -240,24 +125,21 @@ header{
 }
 
 a{
-
     text-decoration: none;
     color: var(--blanco);
     align-items: center;
 }
 
-
-.name {
+.name{
     color: var(--naranja);
     text-shadow: 2px 1px 1px var(--negro);
     font-size: 20px;
 }
 
-.name-1 {
+.name-1{
     color: var(--beige);
 }
-
-.btn {
+.btn{
     height: 35px;
     width: 25%;
     background-color: var(--cafe);
@@ -267,7 +149,7 @@ a{
     font-size: 20px;
 }
 
-#alma {
+#alma{
     width: 97%;
     border-radius: 30px;
     height: 30px;
@@ -282,13 +164,13 @@ a{
     border-radius: 30px;
 }
 
-.botones-3 {
+.botones-3{
     width: 100%;
     margin-top: 5%;
     border-radius: 30px;
 }
 
-.contenedor-2 {
+.contenedor-2{
     background-color: var(--azul);
     border-radius: 30px;
     height: 100%;
@@ -297,7 +179,8 @@ a{
     margin: 8%;
 }
 
-#resultado {
+
+#resultado{
     margin-right: 75%;
     margin-top: 0;
     color: var(--negro);
