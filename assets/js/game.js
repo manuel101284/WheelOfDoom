@@ -46,30 +46,42 @@ function siguienteAlma(){
     //empujarAlma(almaCondenada);
 };
 
+// var imagengif = new Freezeframe('#imagen-caida-gif', {
+//     trigger: false
+// });
+
 let sonidoCaida = new Audio("../assets/music/scream-water.mp3");
 
 // Con esta función vamos a eliminar al coder encontrado en la función anterior 
-function empujarAlma(indiceAlmaElegida, almaCondenada){
+function empujarAlma(indiceAlmaElegida, almaCondenada, imagengif){
 
-    // $('#imagen-caida-gif').show(); // Muestra la imagen, como una consulta para empezar
-    // $.ajax({
-    //     url: '..',
-    //     type: '..',
-    //     complete: function(){
-    //         // Consulta completa
-    //         $('imagen-caida-gif').hide();
-    //     }
+    $('#imagen-caida-gif').show(); // Muestra la imagen, como una consulta para empezar
+    $.ajax({
+        url: '..',
+        type: '..',
+        complete: function(){
+            // Consulta completa
+            $('imagen-caida-gif').hide();
+        }
         
-    // });
+    });
+
+    // setup freezeframe instance with custom selector and options
+    
+    //imagengif.start();
+    //imagengif.stop();
+    //imagengif.toggle();
     
     var almaMuerta = almaCondenada;
 
     sonidoCaida.play();                                                 // Al caer el jugador al agua, se activa un sonido
 
     // alert(almaCondenada);
-    Swal.fire(almaMuerta+" ha caido :C");
+    //Swal.fire(almaMuerta+" ha caido :C");
+    Swal.fire(almaCondenada+" ha caido :(");
 
     listaDeSacrificio.splice(indiceAlmaElegida,1);
+    //imagengif.stop();
     setTimeout(finDelJuego(), 5000);
 };
 
