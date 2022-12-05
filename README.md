@@ -40,7 +40,8 @@ Ingresa al siguiente link para ver el proyecto e interactúa con el:
 https://ahogadosencodigo.netlify.app/
 
 ## Extra ➕
-Aquí encontraras todo nuestro proceso de diseño y desarrollo: 
+Aquí encontraras todo nuestro proceso de diseño y desarrollo:
+
 https://github.com/manuel101284/WheelOfDoom/blob/main/assets/pdf/AhogadosenC%C3%B3digo.pdf
 
 ## Developed by 👩‍💻
