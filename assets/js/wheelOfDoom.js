@@ -73,7 +73,7 @@ function borrarAlma(){
             sacrificio.splice(i,1);                                                  // Borramos al coder indicado de la lista de sacrificios
         }
         else{
-            document.getElementById('decide').play();                                                                        // Si el coder no está, mostramos una alerta informando
+            document.getElementById('decide').play();                                // Si el coder no está, mostramos una alerta informando
             Swal.fire("Dicha alma no está condenada");
             i=20000;
         }
