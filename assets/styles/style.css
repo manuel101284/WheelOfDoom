@@ -221,10 +221,6 @@ body {
     }
 }
 
-audio {
-    display: none;
-}
-
 /* stylos by Diza */
 body{
     font-family: var(--fuente-titulos);
