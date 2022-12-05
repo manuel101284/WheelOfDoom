@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.js"></script>
         <title>Ahogados en Código / Juego</title>
 
 
@@ -15,9 +18,13 @@
 
     <body onload="empezarJuego()">
         <header>
+            
+            <audio id="ohno" src="/assets/music/oh-no.mp3"></audio>
+
             <div class="container-btn-regresar">
-                <button type="button" class="btn" id="home"><a href="/index.html">Regresar</a></button>
+                <button type="button" class="btn" id="home"><a href="/home.html">Regresar</a></button>
             </div>
+
         </header>
         <section class="container">
             <div class="botones-2">
@@ -30,14 +37,23 @@
                 <!-- <button type="button" class="btn btn-mostrar" id="btn-mostrar-alma" onclick="mostrarAlma()">Mostrar</button> -->
             </div>
             <div class="container-gif">
-                <img src="/assets/img/CaidaMobile.gif" class="gif-caida">
+                <!-- <img src="" data-alt="/assets/img/CaidaMobile.gif" class="gif-caida"> -->
+                <img src="/assets/img/Caida.gif"  style="display: none;" class="gif-caida" id="imagen-caida-gif">
             </div>
             <canvas id="ahogadosEnCodigo" width="1000px" height="600px">
             </canvas>
-            <hr>
             <div id="resultado1"></div>
         </section>
         
-        
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <audio controls="" autoplay loop>
+            <source src="./assets/music/gaviotas.mp3" type="audio/mp3">
+            
+            Tu navegador no soporta el elemento "audio".
+        </audio>
+
+
     </body>
 </html>
