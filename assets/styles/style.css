@@ -38,10 +38,6 @@
 body {
     background: var(--cafe);
     justify-content: center;
-    overflow: hidden;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 
 #ahogadosEnCodigo {
