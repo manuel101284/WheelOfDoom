@@ -25,7 +25,7 @@
     --tamaño-textos: 1.5rem;
     --tamaño-titulos-alertas: 2rem;
     --tamaño-textos-alertas: 1rem;
-    --tamaño-botones: 1.2rem;
+    --tamaño-botones: 1.5rem;
 }
 /* EJEMPLO de como usar las Variables Globales: */
     /* .titulo {
@@ -36,12 +36,8 @@
     } */
 
 body {
-    background: var(--blanco);
+    background: var(--cafe);
     justify-content: center;
-    overflow: hidden;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 
 #ahogadosEnCodigo {
@@ -108,6 +104,9 @@ body {
 .swal2-styled.swal2-confirm{
     font-family: var(--fuente-titulos);
     background-color: var(--azul);
+    background: var(--azul);
+    font-weight: var(--tamaño-botones);
+    border: 1px black solid;
 }
 
 .body-main {
@@ -156,6 +155,7 @@ body {
     padding: 0 0 0 0;
     justify-content: center;
 }
+
 .container-btn-siguiente {
     top: 90vh;
     left: 2vh;
@@ -180,7 +180,7 @@ body {
     width: 100%;
     justify-content: center;
     font-family: var(--fuente-titulos);
-    font-size: var(--tamaño-botones);
+    font-size: 19px;
     font-weight: var(--peso-botones);
     padding: 1px 10px 8px 10px;
     border-radius: 100px;
@@ -198,6 +198,7 @@ body {
 #home > a {
     text-decoration: none;
     color: var(--beige);
+    font-size: 19px;
 }
 
 @media (min-width: 425px) {
@@ -208,19 +209,172 @@ body {
         top: 42vh;
         left: 19vh;
     }
+
 }
 
-/* Media query (Tablet) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .container-btn-empujar {
-        top: 42vh;
-        left: 50vh;
+audio {
+    display: none;
+}
+
+/* stylos by Diza */
+body {
+    font-family: var(--fuente-titulos);
+    background-color: var(--blanco);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--azul)
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+    align-items: center;
+}
+
+.name {
+    color: var(--naranja);
+    text-shadow: 2px 1px 1px var(--negro);
+    font-size: 20px;
+}
+
+.name-1 {
+    color: var(--beige);
+}
+.btn {
+    height: 35px;
+    width: 25%;
+    background-color: var(--cafe);
+    text-decoration: none;
+    color: var(--blanco);
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+#alma {
+    width: 97%;
+    border-radius: 30px;
+    height: 30px;
+}
+
+.contenedor {
+    height: 100%;
+    width:75%;
+    margin: 8%;
+    padding: 5%;
+    background-color: var(--beige);
+    border-radius: 30px;
+}
+
+.botones-3 {
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 30px;
+}
+
+.contenedor-2 {
+    background-color: var(--azul);
+    border-radius: 30px;
+    height: 100%;
+    width: 75%;
+    padding: 5%;
+    margin: 8%;
+}
+
+
+#resultado {
+    margin-right: 75%;
+    margin-top: 0;
+    color: var(--negro);
+    font-size: 20px;
+    font-family: var(--fuente-textos);
+}
+
+.container-1 {
+    font-size: 15px;
+}
+
+ /* responsive by Diza */
+ /* tablet */
+@media screen and (min-width: 765px) {
+    .name{
+        font-size: 30px;
+    }
+
+    .btn{
+        width: 32%;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    #alma{
+        width: 99%;
+        height: 42px;
+    }
+
+    .contenedor{
+        width: 39%;
+        margin: 0;
+    }
+
+    .contenedor-2{
+        height: 100%;
+        width: 39%;
+        margin: 0;
+    }
+
+    .contenedores-juntos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5%;   
+    }
+
+    .container-1{
+        font-size: 10px;
     }
 }
-/* Media query (Desktop) */
-@media (min-width: 1024px) and (max-width: 1440px) {
-    .container-btn-empujar {
-        top: 42vh;
-        left: 72vh;
+
+ /* desktop */
+@media screen and (min-width: 1024px) {
+    .name {
+        font-size: 32px;
+    }
+
+    .btn {
+        height: 50px;
+        width: 32%;
+        font-size: 22px;
+    }
+
+    #alma {
+        width: 97%;
+        height: 30px;
+    }
+
+    .contenedor {
+        height: 100%;
+        width: 38%;
+        margin: 0;
+    }
+    
+    .contenedor-2 {
+        height: 100%;
+        width: 38%;
+        margin: 0;
+    }
+    
+    .contenedores-juntos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5%;
+    }
+    
+    h1 {
+        font-size: 25px;
     }
 }
