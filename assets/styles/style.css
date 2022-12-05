@@ -180,7 +180,7 @@ body {
     width: 100%;
     justify-content: center;
     font-family: var(--fuente-titulos);
-    font-size: var(--tamaño-botones);
+    font-size: 19px;
     font-weight: var(--peso-botones);
     padding: 1px 10px 8px 10px;
     border-radius: 100px;
@@ -198,6 +198,7 @@ body {
 #home > a {
     text-decoration: none;
     color: var(--beige);
+    font-size: 19px;
 }
 
 @media (min-width: 425px) {
@@ -216,10 +217,20 @@ audio {
 }
 
 /* stylos by Diza */
-body{
+
+body {
     font-family: var(--fuente-titulos);
     background-color: var(--blanco);
 }
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--azul)
+}
+
+a {
 
 header{
   display: flex;
@@ -229,21 +240,24 @@ header{
 }
 
 a{
+
     text-decoration: none;
     color: var(--blanco);
     align-items: center;
 }
 
-.name{
+
+.name {
     color: var(--naranja);
     text-shadow: 2px 1px 1px var(--negro);
     font-size: 20px;
 }
 
-.name-1{
+.name-1 {
     color: var(--beige);
 }
-.btn{
+
+.btn {
     height: 35px;
     width: 25%;
     background-color: var(--cafe);
@@ -253,7 +267,7 @@ a{
     font-size: 20px;
 }
 
-#alma{
+#alma {
     width: 97%;
     border-radius: 30px;
     height: 30px;
@@ -268,13 +282,13 @@ a{
     border-radius: 30px;
 }
 
-.botones-3{
+.botones-3 {
     width: 100%;
     margin-top: 5%;
     border-radius: 30px;
 }
 
-.contenedor-2{
+.contenedor-2 {
     background-color: var(--azul);
     border-radius: 30px;
     height: 100%;
@@ -283,8 +297,7 @@ a{
     margin: 8%;
 }
 
-
-#resultado{
+#resultado {
     margin-right: 75%;
     margin-top: 0;
     color: var(--negro);
